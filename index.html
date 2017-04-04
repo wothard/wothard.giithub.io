@@ -347,73 +347,21 @@
       
         
           
-            <p>-开始前的准备</p>
-<p>系统环境：在Windows上测试的，Django版本是1.6，python 2.7.13</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!-- more --&gt;</div></pre></td></tr></table></figure>
-<p>1.创建工程</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=34200508&auto=0&height=66"></iframe>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">django-admin.py startproject yoursitename</div></pre></td></tr></table></figure>
-<p><strong>工程文件夹下三个重要的文件</strong></p>
-<p>manage.py —– Django项目里面的工具，通过它可以调用django shell和数据库等。</p>
-<p>settings.py —- 包含了项目的默认设置，包括数据库信息，调试标志以及其他一些工作的变量。</p>
-<p>urls.py —– 负责把URL模式映射到应用程序。(后两个文件在工程文件夹的同名文件夹内)</p>
-<p>2.运行服务</p>
-<p>在工程文件夹下，也就是manage.py所在文件夹。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python manage.py runserver</div></pre></td></tr></table></figure>
-<p>然后打开浏览器，访问<a href="http://127.0.0.1:8000即可看到运行状态。" target="_blank" rel="external">http://127.0.0.1:8000即可看到运行状态。</a></p>
-<p>3.创建blog应用</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python manage.py startapp blog <span class="comment"># 这也是在工程文件夹下</span></div></pre></td></tr></table></figure>
-<p>在工程文件夹下会生成blog文件夹，里面生成：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">__init__.py, admin.py, models.py, test.py, views.py <span class="comment"># 5个文件</span></div></pre></td></tr></table></figure>
-<p>4.编辑blog文件夹下的models.py</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</div><div class="line"></div><div class="line"><span class="comment"># Create your models here.</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">BlogsPost</span><span class="params">(models.Model)</span>:</span></div><div class="line">    <span class="string">''' 创建一个BlogsPost类，继承django.db.models.Model父类'''</span></div><div class="line">    title = models.CharField(max_length = <span class="number">150</span>)</div><div class="line">    body = models.TextField()</div><div class="line">    timestamp = models.DateTimeField()</div></pre></td></tr></table></figure>
-<p>5.创建数据库</p>
-<p>python中自带SQLite数据库，所以无需修改</p>
-<p>如果使用Mysql数据库需要修改<strong>工程文件夹下同名文件夹的settings.py</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">DATABASES = &#123; </div><div class="line">    <span class="string">'default'</span>: &#123;</div><div class="line">        <span class="string">'ENGINE'</span>: <span class="string">'django.db.backends.mysql'</span>,</div><div class="line">        <span class="string">'NAME'</span>: <span class="string">'xblog'</span>,    <span class="comment">## 数据库名称</span></div><div class="line">        <span class="string">'USER'</span>: <span class="string">'root'</span>,</div><div class="line">        <span class="string">'PASSWORD'</span>: <span class="string">'password'</span>,    <span class="comment">## 安装 mysql 数据库时，输入的 root 用户的密码</span></div><div class="line">        <span class="string">'HOST'</span>: <span class="string">'127.0.0.1'</span>,</div><div class="line">    &#125;   </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>然后执行创建命令：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python manage.py syncdb</div></pre></td></tr></table></figure>
-<p>创建过程中会出现选择：输入yes，然后是超级用户名，邮箱，密码(自定义，不是邮箱密码)用于登录管理系统。</p>
-<p>6.添加blog应用到settings.py</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Application definition</span></div><div class="line"></div><div class="line">INSTALLED_APPS = (</div><div class="line">    <span class="string">'django.contrib.admin'</span>,</div><div class="line">    <span class="string">'django.contrib.auth'</span>,</div><div class="line">    <span class="string">'django.contrib.contenttypes'</span>,</div><div class="line">    <span class="string">'django.contrib.sessions'</span>,</div><div class="line">    <span class="string">'django.contrib.messages'</span>,</div><div class="line">    <span class="string">'django.contrib.staticfiles'</span>,</div><div class="line">    <span class="string">'blog'</span>, <span class="comment"># 只是添加这一项</span></div><div class="line">)</div></pre></td></tr></table></figure>
-<p>修改跟settings.py同文件夹的urls.py</p>
-<p>原文件：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">urlpatterns = patterns(<span class="string">''</span>,</div><div class="line">    <span class="comment"># Examples:</span></div><div class="line">    <span class="comment"># url(r'^$', 'mysite.views.home', name='home'),</span></div><div class="line">    <span class="comment"># url(r'^blog/', include('blog.urls')),</span></div><div class="line">    <span class="comment"># url(r'^admin/', include(admin.site.urls)),</span></div><div class="line">)</div></pre></td></tr></table></figure>
-<p>修改成：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">urlpatterns = patterns(<span class="string">''</span>,</div><div class="line">    <span class="comment"># Examples:</span></div><div class="line">    <span class="comment"># url(r'^$', 'mysite.views.home', name='home'),</span></div><div class="line">    <span class="comment"># url(r'^blog/', include('blog.urls')),</span></div><div class="line">    url(<span class="string">r'^admin/'</span>, include(admin.site.urls)),</div><div class="line">)</div></pre></td></tr></table></figure>
-<p>7.将创建数据添加到后台</p>
-<p>编辑blog文件夹下的models.py</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</div><div class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</div><div class="line"></div><div class="line"><span class="comment"># Create your models here.</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">BlogsPost</span><span class="params">(models.Model)</span>:</span></div><div class="line">    title = models.CharField(max_length = <span class="number">150</span>)</div><div class="line">    body = models.TextField()</div><div class="line">    timestamp = models.DateTimeField()</div><div class="line"></div><div class="line">admin.site.register(BlogsPost) <span class="comment"># 添加这一行</span></div></pre></td></tr></table></figure>
-<p>再次初始化数据库</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">python manage.py syncdb </div><div class="line">python manage.py runserver <span class="comment"># 访问后台，http://127.0.0.1:8000/admin/ 输入用户名，密码，登录</span></div></pre></td></tr></table></figure>
-<p><strong>然后随意创建post，后面会用于显示。</strong></p>
-<p>8.创建模板</p>
-<p>在blog文件夹下新建一个templates文件夹，然后在该文件夹下新建一个<strong>archive.html</strong>文件</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% for post in posts %&#125;</div><div class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>&#123;&#123; post.title &#125;&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; post.timestamp &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; post.body &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">&#123;% endfor%&#125;</div></pre></td></tr></table></figure>
-<p>然后设置模板路径，修改settings.py</p>
-<p>在最后面添加</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#template</span></div><div class="line">TEMPLATE_DIRS=(</div><div class="line">    <span class="string">'/home/fnngj/djpy/mysite/blog/templates'</span></div><div class="line">)</div></pre></td></tr></table></figure>
-<p>在blog文件夹下的views.py中创建试图函数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> django.template <span class="keyword">import</span> loader,Context</div><div class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse</div><div class="line"><span class="keyword">from</span> blog.models <span class="keyword">import</span> BlogsPost</div><div class="line"></div><div class="line"><span class="comment"># Create your views here.</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">archive</span><span class="params">(request)</span>:</span></div><div class="line">    posts = BlogsPost.objects.all()</div><div class="line">    t = loader.get_template(<span class="string">"archive.html"</span>)</div><div class="line">    c = Context(&#123;<span class="string">'posts'</span>:posts&#125;)</div><div class="line">    <span class="keyword">return</span> HttpResponse(t.render(c))</div></pre></td></tr></table></figure>
-<p>posts = BlogPost.objects.all() ：获取数据库里面所拥有BlogPost对象</p>
-<p>t = loader.get_template(“archive.html”)：加载模板</p>
-<p>c = Context({‘posts’:posts})：模板的渲染的数据是有一个字典类的对象Context提供，这里的是一对键值对。</p>
-<p>9.创建blog的url模式</p>
-<p>原文件：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">urlpatterns = patterns(<span class="string">''</span>,</div><div class="line">    <span class="comment"># Examples:</span></div><div class="line">    <span class="comment"># url(r'^$', 'mysite.views.home', name='home'),</span></div><div class="line">    <span class="comment"># url(r'^blog/', include('blog.urls')),</span></div><div class="line">    url(<span class="string">r'^admin/'</span>, include(admin.site.urls)),</div><div class="line">)</div></pre></td></tr></table></figure>
-<p>修改后：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">urlpatterns = patterns(<span class="string">''</span>,</div><div class="line">    <span class="comment"># Examples:</span></div><div class="line">    <span class="comment"># url(r'^$', 'mysite.views.home', name='home'),</span></div><div class="line">    url(<span class="string">r'^blog/'</span>, include(<span class="string">'blog.urls'</span>)),</div><div class="line">    url(<span class="string">r'^admin/'</span>, include(admin.site.urls)),</div><div class="line">)</div></pre></td></tr></table></figure>
-<p>10.blog的urls</p>
-<p>在blog文件夹下新建一个<strong>urls.py</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> django.conf.urls <span class="keyword">import</span> *</div><div class="line"><span class="keyword">from</span> blog.views <span class="keyword">import</span> archive</div><div class="line"></div><div class="line">urlpatterns = patterns(<span class="string">''</span>,</div><div class="line">                      url(<span class="string">r'^$'</span>,archive),</div><div class="line">                      )</div></pre></td></tr></table></figure>
-<p><strong>最后可以选择给博客添加样式</strong></p>
-<p>在blog/templates/创建一个html文件，然后让archive.html引用就完成了。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;% extends "united.html" %&#125;</div><div class="line">  &#123;% block content %&#125;</div><div class="line">    archive.html内容</div><div class="line">  &#123;% endblock %&#125;</div></pre></td></tr></table></figure>
-<p>然后找一个美化的样式写到united.html中就行了。</p>
-<p><img src="https://github.com/wothard/wothard.github.io/tree/master/images/blog.png" alt="" title="Lo"></p>
-
-          
+          -开始前的准备
+系统环境：在Windows上测试的，Django版本是1.6，python 2.7.13
+1&lt;!-- more --&gt;
+1.创建工程
+1django-admin.py startproject yoursitename
+工程文件夹下三个重要的文件
+manage.py —–
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/04/关于Django创建博客的入门/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -532,9 +480,16 @@
       
         
           
-            <p>Hi，虽然今天吃了一颗糖，其实也没啥庆祝的，一个后端的假的程序员，花了一下午弄的博客，简洁的很啊。</p>
+          Hi，虽然今天吃了一颗糖，其实也没啥庆祝的，一个后端的假的程序员，花了一下午弄的博客，简洁的很啊。
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/31/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
