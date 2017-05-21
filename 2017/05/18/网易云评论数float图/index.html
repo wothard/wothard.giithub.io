@@ -87,15 +87,61 @@
 
 
 
+<meta name="description" content="float图来了，18号想弄的，非得拖到今天。
+先前想到用svg格式嵌入的，但写在markdown里面没法弄，以后多找找些js工具来弄图表，
+虽然博客是静态的，但只写字太单调了，加点东西装饰，先弄第一个吧
+
+
+
+
+
+
+PlainInvertedPolar
+
+containers {
+min-width: 320px;
+max-width: 600px;
+margin: 0 auto;
+}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网易云评论数float图">
 <meta property="og:url" content="http://yoursite.com/2017/05/18/网易云评论数float图/index.html">
 <meta property="og:site_name" content="路漫漫兮其修远 吾将上下而求索">
-<meta property="og:image" content="https://github.com/wothard/wothard.github.io/blob/master/images/Barfloat/test11.svg?raw=true">
-<meta property="og:updated_time" content="2017-05-18T14:05:09.553Z">
+<meta property="og:description" content="float图来了，18号想弄的，非得拖到今天。
+先前想到用svg格式嵌入的，但写在markdown里面没法弄，以后多找找些js工具来弄图表，
+虽然博客是静态的，但只写字太单调了，加点东西装饰，先弄第一个吧
+
+
+
+
+
+
+PlainInvertedPolar
+
+containers {
+min-width: 320px;
+max-width: 600px;
+margin: 0 auto;
+}">
+<meta property="og:updated_time" content="2017-05-21T09:08:32.955Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网易云评论数float图">
-<meta name="twitter:image" content="https://github.com/wothard/wothard.github.io/blob/master/images/Barfloat/test11.svg?raw=true">
+<meta name="twitter:description" content="float图来了，18号想弄的，非得拖到今天。
+先前想到用svg格式嵌入的，但写在markdown里面没法弄，以后多找找些js工具来弄图表，
+虽然博客是静态的，但只写字太单调了，加点东西装饰，先弄第一个吧
+
+
+
+
+
+
+PlainInvertedPolar
+
+containers {
+min-width: 320px;
+max-width: 600px;
+margin: 0 auto;
+}">
 
 
 
@@ -340,7 +386,91 @@
       
 
       
-        <p><img src="https://github.com/wothard/wothard.github.io/blob/master/images/Barfloat/test11.svg?raw=true" alt="Alt text" title="Optional title"></p>
+        <p>float图来了，18号想弄的，非得拖到今天。</p>
+<p>先前想到用svg格式嵌入的，但写在markdown里面没法弄，以后多找找些js工具来弄图表，</p>
+<p>虽然博客是静态的，但只写字太单调了，加点东西装饰，先弄第一个吧</p>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<p><div id="containers"></div></p>
+<button id="plain">Plain</button><br><button id="inverted">Inverted</button><br><button id="polar">Polar</button>
+
+<style type="text/css">containers {
+min-width: 320px;
+max-width: 600px;
+margin: 0 auto;
+}
+</style>
+
+
+<script type="text/javascript">
+
+
+var chart = Highcharts.chart('containers', {
+
+    title: {
+        text: 'Chart.update'
+    },
+
+    subtitle: {
+        text: 'Plain'
+    },
+
+    xAxis: {
+        categories: ['It\'s All on U', 'Never Forget You (Price &amp; Takis Remix)', 'All Time Low (Cash Cash Remix)', 'Arigato', 'So Long', 'Tokyo', 'All Night', 'XE3 (Wheathin Turn)', 'Shape Of You (Galantis Remix)', 'Galway Girl (Decoy! Remix)', 'Fractures', 'You &amp; Me', 'Petal', 'Hola (Original Mix)', 'Middle Of The Night', 'Starship', 'Silver City', 'Alone (Extended Mix)', 'Where I\'ll Be Waiting (VIP Mix)', 'Scared To Be Lonely']
+    },
+
+    series: [{
+        type: 'column',
+        colorByPoint: true,
+        data: [135, 402, 1093, 2192, 1529, 572, 1879, 307, 3870, 663, 3283, 2652, 121, 137, 1252, 443, 7456, 583, 6544, 146],
+        showInLegend: false
+    }]
+
+});
+
+
+$('#plain').click(function () {
+    chart.update({
+        chart: {
+            inverted: false,
+            polar: false
+        },
+        subtitle: {
+            text: 'Plain'
+        }
+    });
+});
+
+$('#inverted').click(function () {
+    chart.update({
+        chart: {
+            inverted: true,
+            polar: false
+        },
+        subtitle: {
+            text: 'Inverted'
+        }
+    });
+});
+
+$('#polar').click(function () {
+    chart.update({
+        chart: {
+            inverted: false,
+            polar: true
+        },
+        subtitle: {
+            text: 'Polar'
+        }
+    });
+});
+
+</script>
+
+<p>按钮没弄是因为css没学，现学现卖也没那能力。暂且就这样吧。</p>
 
       
     </div>
