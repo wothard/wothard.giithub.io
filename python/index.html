@@ -3,59 +3,561 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CSS Grid: Periodic Table</title>
+    <title>Python Build in Fuctions Tables</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-
-    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'> -->
-
     <link rel="stylesheet" href="/css/pytor.css">
 
 
 </head>
 
 <body>
-    <!-- https://docs.python.org/3.7/library/index.html -->
+
 
     <h1>Python 3.7 Fuctions Tables</h1>
     <h5>all build in Fuctions</h5>
     <div class="periodic-table">
         <div class="empty-spacer-1"></div>
-        <div class="empty-spacer-2"></div>
-        <div class="periodic-element fun-stuff" data-description="Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).">
+        <!-- bool Function -->
+        <a class="periodic-element fun-stuff" data-description="将一个值转化成布尔值，使用标准的真值测试例程" style="width: 86px; left: -32px">
             <div class="periodic-element-inner">
-                <div class="title">len</div>
+                <div class="title">bool</div>
+                <div class="description">bool</div>
             </div>
-        </div>
-        <!-- abs() Fuction -->
-        <div class="periodic-element social-media" data-description="Return the absolute value of a number. The argument may be an integer or a floating point number. If the argument is a complex number, its magnitude is returned.">
+        </a>
+        <div style="grid-column: 2; grid-row: 2;"></div>
+        <!-- abs Function -->
+        <a href="#legend-table" class="periodic-element fun-stuff" data-description="返回一个数的绝对值">
             <div class="periodic-element-inner">
                 <div class="title">abs</div>
+                <div class="description">obj</div>
             </div>
-        </div>
-        <!-- all() Fuction -->
-        <div class="periodic-element social-media" data-description="Return True if all elements of the iterable are true (or if the iterable is empty)">
+        </a>
+        <!--all Funcntion-->
+        <a class="periodic-element fun-stuff" data-description="'返回True 或 False">
             <div class="periodic-element-inner">
                 <div class="title">all</div>
+                <div class="description">bool</div>
             </div>
-        </div>
-        <!-- any() Fuction -->
-        <div class="periodic-element social-media" data-description="Return True if any element of the iterable is true. If the iterable is empty, return False">
+        </a>
+        <!--any Funcntion-->
+        <a class="periodic-element social-media" data-description="返回True 或 False">
             <div class="periodic-element-inner">
                 <div class="title">any</div>
+                <div class="description">bool</div>
             </div>
-        </div>
-        <!-- int() Fuction -->
-        <div class="periodic-element just-trying" data-description="Return an integer object constructed from a number or string x, or return 0 if no arguments are given. If x defines __int__(), int(x) returns x.__int__(). If x defines __trunc__(), it returns x.__trunc__(). For floating point numbers, this truncates towards zero.">
+        </a>
+        <!-- bin Function -->
+        <a class="periodic-element social-media" data-description="将一个整数转化成一个二进制字符串">
             <div class="periodic-element-inner">
-                <div class="title">int</div>
+                <div class="title">bin</div>
+                <div class="description">str</div>
             </div>
-        </div>
+        </a>
+
+        <div style="grid-column: 1 / span 9; grid-row: 2;"></div>
+        <!-- float Function -->
+        <a class="periodic-element fun-stuff" data-description="将字符串或数字转换或一个浮点数" style="width: 86px; left: -32px;">
+            <div class="periodic-element-inner">
+                <div class="title3">float</div>
+                <div class="description">flo</div>
+            </div>
+        </a>
+        <!-- chr Fuction -->
+        <a class="periodic-element social-media" data-description="返回一个单字符字符串">
+            <div class="periodic-element-inner">
+                <div class="title">chr</div>
+                <div class="description">str</div>
+            </div>
+        </a>
+        <div style="grid-column: 12; grid-row: 2;"></div>
+        <!-- callable Function -->
+        <a class="periodic-element great-view" data-description="根据object 返回True或False" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title3">callable</div>
+                <div class="description">bool</div>
+            </div>
+        </a>
+        <div style="grid-column: 14; grid-row: 2;"></div>
+        <div style="grid-column: 1 / span 5; grid-row: 3;"></div>
+        <!-- str Function-->
+        <a class="periodic-element fun-stuff" data-description="返回一个字符串，其中包含对象可打印的描述">
+            <div class="periodic-element-inner">
+                <div class="title">str</div>
+                <div class="description">str</div>
+            </div>
+        </a>
+        <!-- basestring Function -->
+        <a class="periodic-element social-media" data-description="这个抽象类型是str和unicode的超类" style="width: 150px">
+            <div class="periodic-element-inner">
+                <div class="title3">basestring</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <div style="grid-column: 8 / span 2; grid-row: 3;"></div>
+        <!-- filter Function -->
+        <a class="periodic-element fun-stuff" data-description="function 返回true 时从iterable 的元素中构造一个列表" style="width: 86px; left: -32px;">
+            <div class="periodic-element-inner">
+                <div class="title2">filter</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <!-- classmethod Function -->
+        <a class="periodic-element great-view" data-description="将function包装成类方法。" style="width: 246px">
+            <div class="periodic-element-inner">
+                <div class="title3">classmethod</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <div style="grid-column: 12 / span 3; grid-row: 3;"></div>
+        <!-- <div style="grid-column: 11 / span 4; grid-row: 3;"></div> -->
+        <!-- bytearray Function -->
+        <a class="periodic-element great-view" data-description="返回一个新的字节数组" style="width: 150px;">
+            <div class="periodic-element-inner">
+                <div class="title3">bytearray</div>
+                <div class="description">list</div>
+            </div>
+        </a>
+        <div style="grid-column: 2 / span 2; grid-row: 4;"></div>
+        <!-- cmp Function -->
+        <a class="periodic-element intense-work" data-description="比较两个对象x和y，根据结果返回一个整数。" style="width: 86px; left: -32px;">
+            <div class="periodic-element-inner">
+                <div class="title3">cmp</div>
+                <div class="description">int</div>
+            </div>
+        </a>
+        <!-- compile Function -->
+        <a class="periodic-element intense-work" data-description="将source编译成代码对象" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title3">compile</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 6; grid-row: 4;"></div>
+        <!-- complex Function -->
+        <a class="periodic-element just-trying" data-description="创建一个复数" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title2">complex</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 8; grid-row: 4;"></div>
+        <!-- delattr Function -->
+        <a class="periodic-element great-view" data-description="这个函数删除该名字对应的属性" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title3">delattr</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <div style="grid-column: 10; grid-row: 4"></div>
+        <!-- dict Function -->
+        <a class="periodic-element just-trying" data-description="创建一个新字典" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">dict</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 12; grid-row: 4"></div>
+        <!--enumerate  Function -->
+        <a class="periodic-element intense-work" data-description="返回 enumerate 对象" style="width: 150px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title">enumerate</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 14; grid-row: 4"></div>
+        <!-- dir Function -->
+        <a class="periodic-element just-trying" data-description="返回列表">
+            <div class="periodic-element-inner">
+                <div class="title">dir</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <!-- divmod Function -->
+        <a class="periodic-element fun-stuff" data-description="返回商和余数的二元组" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title3">divmod</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 3; grid-row: 5"></div>
+        <!-- eval Function -->
+        <a class="periodic-element fun-stuff" data-description="返回值是计算表达式的结果" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">eval</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 5; grid-row: 5"></div>
+        <!-- hash Function -->
+        <a class="periodic-element fun-stuff" data-description="返回对象（如果有的话）的哈希值" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title2">hash</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- file Function -->
+        <a class="periodic-element social-media" data-description="文件类型的构造函数">
+            <div class="periodic-element-inner">
+                <div class="title">file</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <!-- excefile Function -->
+        <a class="periodic-element intense-work" data-description="类似于EXEC 语句，但分析一个文件" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title3">excefile</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <div style="grid-column: 9; grid-row: 5"></div>
+        <!-- format Function-->
+        <a class="periodic-element great-view" data-description="将value转化成“格式化”的表现形式，格式由format_spec控制" style="width: 86px">
+            <div class="periodic-element-inner">
+                <div class="title">format</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <div style="grid-column: 11; grid-row: 5"></div>
+        <!-- getattr Function -->
+        <a class="periodic-element fun-stuff" data-description="返 回 object 名为 name属性的值" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title">getattr</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- frozeset Function -->
+        <a class="periodic-element social-media" data-description="返 回一个 frozenset 对象，其元素来自于Iterable" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title2">frozenset</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 14; grid-row: 5"></div>
+        <!-- globals Function -->
+        <a class="periodic-element just-trying" data-description="返回代表当前global 符号表字典的字典" style="width: 118px">
+            <div class="periodic-element-inner">
+                <div class="title3">globals</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 2; grid-row: 6"></div>
+        <!--  hasattr Function -->
+        <a class="periodic-element fun-stuff" data-description="检查给定的对象是否有指定的属性" style="width: 118px;">
+            <div class="periodic-element-inner">
+                <div class="title3">hasattr</div>
+                <div class="description">bool</div>
+            </div>
+        </a>
+        <div style="grid-column: 4; grid-row: 6"></div>
+        <!-- help Function -->
+        <a class="periodic-element just-trying" data-description="调 用内置的帮助系统" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">help</div>
+                <div class="description">func</div>
+            </div>
+        </a>
+        <div style="grid-column: 6; grid-row: 6"></div>
+        <!-- input Function -->
+        <a class="periodic-element fun-stuff" data-description="等同于eval(raw_input(prompt))" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title2">input</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <!-- hex Function -->
+        <a class="periodic-element great-view" data-description="转换一个（任意大小）整数为十六进制字符串">
+            <div class="periodic-element-inner">
+                <div class="title">hex</div>
+                <div class="description">exp</div>
+            </div>
+        </a>
+        <!-- id Function -->
+        <a class="periodic-element great-view" data-description="返回对象的``identity''">
+            <div class="periodic-element-inner">
+                <div class="title2">id</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- int Function-->
+        <a class="periodic-element fun-stuff" data-description="将数字或字符串x转化成一个整数，如果没有参数则返回0">
+            <div class="periodic-element-inner">
+                <div class="title2">int</div>
+                <div class="description">int</div>
+            </div>
+        </a>
+        <!-- isinstance Function-->
+        <a class="periodic-element just-trying" data-description="返 回 true 如果该 object 参数是classinfo的一个实例，或其（直接或间接）子类的实例" style="width: 118px;">
+            <div class="periodic-element-inner">
+                <div class="title">isinstance</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 12; grid-row: 6"></div>
+        <!-- issubclass Function-->
+        <a class="periodic-element fun-stuff" data-description="返回true 如果class 是classinfo （直接或间接）的子类" style="width: 118px;">
+            <div class="periodic-element-inner">
+                <div class="title">issubclass</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 14; grid-row: 6"></div>
+        <!-- iter Function-->
+        <a class="periodic-element fun-stuff" data-description="返 回一个迭代器对象">
+            <div class="periodic-element-inner">
+                <div class="title2">iter</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- len Function -->
+        <a class="periodic-element great-view" data-description="返回对象的长度">
+            <div class="periodic-element-inner">
+                <div class="title">len</div>
+                <div class="description">int</div>
+            </div>
+        </a>
+        <!-- list Function-->
+        <a class="periodic-element fun-stuff" data-description="返 回一个列表的 items 与可迭代的项目相同的顺序且相同的 items">
+            <div class="periodic-element-inner">
+                <div class="title">list</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <!-- locals Function-->
+        <a class="periodic-element just-trying" data-description="更新并返回一个代表当前local 符号表的字典" style="width: 86px">
+            <div class="periodic-element-inner">
+                <div class="title2">locals</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 5; grid-row: 7"></div>
+        <!-- long Function-->
+        <a class="periodic-element intense-work" data-description="转 换字符串或数字为一个长整数" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title2">long</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- map Function-->
+        <a class="periodic-element fun-stuff" data-description="应用function 在 iterable 的每一个项上并返回一个列表" style="width: 86px">
+            <div class="periodic-element-inner">
+                <div class="title2">map</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 8; grid-row: 7"></div>
+        <!-- max Function-->
+        <a class="periodic-element fun-stuff" data-description="一个Iterable 参数，返回其中一个最大的非空可迭代项" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title2">max</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!--  memoryview Function-->
+        <a class="periodic-element intense-work" data-description="返回给定参数的“内存视图”" style="width: 150px;">
+            <div class="periodic-element-inner">
+                <div class="title">memoryview</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 11 / span 2; grid-row: 7"></div>
+        <!-- next Function-->
+        <a class="periodic-element great-view" data-description="通过调用iterator的next()方法，得到它的下一个元素" style="width: 86px; left: -32px;">
+            <div class="periodic-element-inner">
+                <div class="title">next</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- min Function-->
+        <a class="periodic-element fun-stuff" data-description="一个Iterable 参数，返回其中一个最小的非空可迭代项">
+            <div class="periodic-element-inner">
+                <div class="title">min</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- object Function-->
+        <a class="periodic-element great-view" data-description="返回一个新特征的对象" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title">object</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 2; grid-row: 8"></div>
+        <!-- open Function-->
+        <a class="periodic-element just-trying" data-description="I have z" style="width: 86px; left: -32px;">
+            <div class="periodic-element-inner">
+                <div class="title">open</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- oct Function-->
+        <a class="periodic-element social-media" data-description="转换一（任意大小）整数到一个八进制字符串">
+            <div class="periodic-element-inner">
+                <div class="title">oct</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- ord Function-->
+        <a class="periodic-element fun-stuff" data-description="给 定一个长度为 1 的字符串，返回一个整数，当参数是一个 Unicode对象，代表字符的 Unicode 代码">
+            <div class="periodic-element-inner">
+                <div class="title">ord</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- pow Function-->
+        <a class="periodic-element just-trying" data-description="返回x 的Y次方，如果给出 z，返回x 的y次方，模Z（比pow(x, y) % z 更有效）的" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">pow</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 7; grid-row: 8"></div>
+        <!-- print Function-->
+        <a class="periodic-element fun-stuff" data-description="以sep分割，end的值结尾，将 目标对象 打印到 文件流中" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title2">print</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!--  property Function-->
+        <a class="periodic-element social-media" data-description="返回一个new-style 类（从 object 派生的类）的属性" style="width: 118px;">
+            <div class="periodic-element-inner">
+                <div class="title2">property</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 10; grid-row: 8"></div>
+        <!-- range Function-->
+        <a class="periodic-element fun-stuff" data-description="这是一个创建算术级数列表的通用函数" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">range</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 12; grid-row: 8"></div>
+        <!-- repr Function-->
+        <a class="periodic-element social-media" data-description="返回一个字符串，其中包含一个对象的可打印形式" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title2">repr</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <!-- set Function-->
+        <a class="periodic-element fun-stuff" data-description="返回其元素都是从iterable 得到的 set">
+            <div class="periodic-element-inner">
+                <div class="title">set</div>
+                <div class="description">set</div>
+            </div>
+        </a>
+        <!-- round Function-->
+        <a class="periodic-element fun-stuff" data-description="返回浮点值x 四舍五入到小数点后n位后数字" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title">round</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 2; grid-row: 9"></div>
+        <!-- setattr Function-->
+        <a class="periodic-element just-trying" data-description="与getattr（）相对应。该参数是一个对象，一个字符串和一个任意值" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title">setattr</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <!-- reversed Function-->
+        <a class="periodic-element great-view" data-description="返回一个反向迭代器" style="width: 118px;">
+            <div class="periodic-element-inner">
+                <div class="title2">reversed</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 5; grid-row: 9"></div>
+        <!-- slice Function-->
+        <a class="periodic-element just-trying" data-description="返回一个切片对象，它表示的是range(start, stop, step)指定的范围" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">slice</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 7; grid-row: 9"></div>
+        <!-- staticmethod Function-->
+        <a class="periodic-element social-media" data-description="函数返回一个静态方法" style="width: 150px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title">staticmethod</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <div style="grid-column: 9; grid-row: 9"></div>
+        <!-- __import __ Function-->
+        <a class="periodic-element just-trying" data-description="该函数可以使用给定的globals 和locals导入模块名称，以确定如何解释包上下文中的名称" style="width: 130px;">
+            <div class="periodic-element-inner">
+                <div class="title">__import__</div>
+                <div class="description">none</div>
+            </div>
+        </a>
+        <div style="grid-column: 11 / span 4; grid-row: 9"></div>
+        <div style="grid-column: 12; grid-row: 9"></div>
+        <div style="grid-column: 13; grid-row: 9"></div>
+        <!-- sum Function-->
+        <a class="periodic-element just-trying" data-description="求 start 和可迭代的从左至右的项和并返回总和" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">sum</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 2; grid-row: 10"></div>
+        <div style="grid-column: 3; grid-row: 10"></div>
+        <!-- super Function-->
+        <a class="periodic-element fun-stuff" data-description="返回类型的超类" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title">super</div>
+                <div class="description">obj</div>
+            </div>
+        </a>
+        <div style="grid-column: 5; grid-row: 10"></div>
+        <!-- tuple Function-->
+        <a class="periodic-element great-view" data-description="返回一个元组的 items 与可迭代的 iterable 是相同的且有相同的顺序" style="width: 86px; left: -64px">
+            <div class="periodic-element-inner">
+                <div class="title">tuple</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 7 / span 8; grid-row: 10"></div>
+        <!-- sorted Function-->
+        <a class="periodic-element great-view" data-description="返回一个新的排序的列表，包含Iterable 的项" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title2">sorted</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 2; grid-row: 11"></div>
+        <!-- type Function-->
+        <a class="periodic-element great-view" data-description="返回对象的类型。返回值是一个类型对象" style="width: 86px; left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title">type</div>
+                <div class="description">ty</div>
+            </div>
+        </a>
+        <!-- vars Function-->
+        <a class="periodic-element just-trying" data-description="如果没有参数，根据现在的local 符号表返回一个字典" style="width: 86px;">
+            <div class="periodic-element-inner">
+                <div class="title">vars</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
+        <div style="grid-column: 5; grid-row: 11"></div>
+        <!-- zip Function-->
+        <a class="periodic-element fun-stuff" data-description="这 个函数返回一个元组列表，其中的第 i 元组包含每一个序列或 iterables 的第i个元素" style="left: -32px">
+            <div class="periodic-element-inner">
+                <div class="title">zip</div>
+                <div class="description">iter</div>
+            </div>
+        </a>
     </div>
-    <div class="legend-table">
-        <div class="legend-table__wrapper"><span class="legend-table__marker social-media"></span><span class="legend-table__text">Social Media</span><span class="legend-table__marker intense-work"></span><span class="legend-table__text">Serious Work</span><span class="legend-table__marker just-trying"></span>
-            <span class="legend-table__text">Personal Development</span><span class="legend-table__marker fun-stuff"></span><span class="legend-table__text">Fun Stuff</span><br/>
+    <div class="legend-table" id="legend-table">
+        <div class="legend-table__wrapper"><span class="legend-table__marker social-media"></span><span class="legend-table__text">Social Media</span><span class="legend-table__marker intense-work"></span>
+            <span class="legend-table__text">Serious Work</span><span class="legend-table__marker just-trying"></span>
+            <span class="legend-table__text">Personal Development</span><span class="legend-table__marker fun-stuff"></span>
+            <span class="legend-table__text">Fun Stuff</span><br/>
             <div class="legend-table__direction"><span>&#8594; &ensp; Across the table: Importance</span></div>
             <div class="legend-table__direction"><span>&#8595; &ensp; Down the table: Time Spent</span></div>
         </div>
@@ -66,14 +568,6 @@
     <footer>
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
-
-
-    <script src="js/index.js"></script>
-
-
-
-
 </body>
 
 </html>
