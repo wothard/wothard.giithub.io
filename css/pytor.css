@@ -10,6 +10,18 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font: 700 2em "Poppins", sans-serif;
+    color: #f1f7f6;
+    text-align: left;
+}
+
+h4 {
+    font: 400 1em "Poppins", sans-serif;
+    color: #f1f5f6;
+    text-align: left;
+}
+
 h5 {
     margin: -2em auto 2em;
     /* margin: 1em auto 0; */
@@ -71,7 +83,7 @@ footer a .icons {
 .periodic-table {
     display: grid;
     grid-template-columns: repeat(14, 60px);
-    grid-template-rows: repeat(10, 60px);
+    grid-template-rows: repeat(11, 60px);
     grid-gap: 4px;
     margin: auto;
     max-width: 1200px;
@@ -275,4 +287,9 @@ a.periodic-element {
 .empty-spacer-3 {
     grid-column: 4 / span 6;
     grid-row: 4;
+}
+
+.temp {
+    max-width: 900px;
+    margin: 0 auto;
 }
