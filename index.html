@@ -1,1072 +1,1238 @@
 <!doctype html>
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next use-motion theme-next-mala">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-    <meta name="keywords" content="Hexo, NexT" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-    <meta name="description" content="入不言兮出不辞， 乘回风兮载云旗。 悲莫悲兮生别离， 乐莫乐兮新相知。">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="路漫漫兮其修远 吾将上下而求索">
-    <meta property="og:url" content="http://yoursite.com/index.html">
-    <meta property="og:site_name" content="路漫漫兮其修远 吾将上下而求索">
-    <meta property="og:description" content="入不言兮出不辞， 乘回风兮载云旗。 悲莫悲兮生别离， 乐莫乐兮新相知。">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="路漫漫兮其修远 吾将上下而求索">
-    <meta name="twitter:description" content="入不言兮出不辞， 乘回风兮载云旗。 悲莫悲兮生别离， 乐莫乐兮新相知。">
-    <script type="text/javascript" id="hexo.configurations">
-        var NexT = window.NexT || {};
-        var CONFIG = {
-            root: '/',
-            scheme: 'Mist',
-            sidebar: {
-                "position": "left",
-                "display": "post",
-                "offset": 12,
-                "offset_float": 0,
-                "b2t": false,
-                "scrollpercent": false
-            },
-            fancybox: true,
-            motion: true,
-            duoshuo: {
-                userId: '0',
-                author: '博主'
-            },
-            algolia: {
-                applicationID: '',
-                apiKey: '',
-                indexName: '',
-                hits: {
-                    "per_page": 10
-                },
-                labels: {
-                    "input_placeholder": "Search for Posts",
-                    "hits_empty": "We didn't find any results for the search: ${query}",
-                    "hits_stats": "${hits} results found in ${time} ms"
-                }
-            }
-        };
-    </script>
-    <link rel="canonical" href="http://yoursite.com/" />
-    <title> 路漫漫兮其修远 吾将上下而求索 </title>
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1" />
+
+
+
+
+  <meta name="keywords" content="Hexo,Mala" />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hexo">
+  <meta property="og:url" content="http://yoursite.com/index.html">
+  <meta property="og:site_name" content="Hexo">
+  <meta property="article:author" content="Wothard">
+  <meta name="twitter:card" content="summary">
+
+
+  <script type="text/javascript" id="hexo.configuration">
+    var CONFIG = {
+      scheme: 'Mala',
+      sidebar: 'post'
+    };
+  </script>
+
+  <title> Hexo </title>
+  <meta name="generator" content="Hexo 4.2.0">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-    <div class="container sidebar-position-left page-home">
-        <div class="headband"></div>
-        <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-            <div class="header-inner">
-                <div class="site-brand-wrapper">
-                    <div class="site-meta ">
-                        <div class="custom-logo-site-title">
-                            <a href="/" class="brand" rel="start">
-                                <span class="logo-line-before"><i></i></span>
-                                <span class="site-title">路漫漫兮其修远 吾将上下而求索</span>
-                                <span class="logo-line-after"><i></i></span>
-                            </a>
-                        </div>
-                        <p class="site-subtitle">Don't-装-逼</p>
-                    </div>
-                    <div class="site-nav-toggle">
-                        <button>
-              <span class="btn-bar"></span>
-              <span class="btn-bar"></span>
-              <span class="btn-bar"></span>
-            </button>
-                    </div>
-                </div>
-                <nav class="site-nav">
-                    <ul id="menu" class="menu">
-                        <li class="menu-item menu-item-home">
-                            <a href="/" rel="section">
-                                <i class="menu-item-icon fa fa-fw fa-home"></i> <br /> 首页
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-categories">
-                            <a href="/categories" rel="section">
-                                <i class="menu-item-icon fa fa-fw fa-th"></i> <br /> 分类
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-about">
-                            <a href="/about" rel="section">
-                                <i class="menu-item-icon fa fa-fw fa-user"></i> <br /> 关于
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-archives">
-                            <a href="/archives" rel="section">
-                                <i class="menu-item-icon fa fa-fw fa-archive"></i> <br /> 归档
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-tags">
-                            <a href="/tags" rel="section">
-                                <i class="menu-item-icon fa fa-fw fa-tags"></i> <br /> 标签
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main id="main" class="main">
-            <div class="main-inner">
-                <div class="content-wrap">
-                    <div id="content" class="content">
-                        <section id="posts" class="posts-expand">
-                            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/08/Android-Develop-1/">
-                                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Wothard">
-                  <meta itemprop="description" content="">
-                  <meta itemprop="image" content="/images/avatar.jpg">
-                </span>
-                                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
-                </span>
-                                <header class="post-header">
-                                    <h1 class="post-title" itemprop="name headline">
-                                        <a class="post-title-link" href="/2018/09/08/Android-Develop-1/" itemprop="url">
-                      Android Develop #1
-                    </a>
-                                    </h1>
-                                    <div class="post-meta">
-                                        <span class="post-time">
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-                                        <span class="post-meta-item-text">发表于</span>
-                                        <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-08T17:09:17+08:00">
-                        2018-09-08
-                      </time>
-                                        </span>
-                                    </div>
-                                </header>
-                                <div class="post-body" itemprop="articleBody">
-                                    #开发一个简单的Toast应用 ##1 下载 Android Studio 并安装 1进入官网 https://developer.android.com/studio/ 下载 一路确认安装后，打开 Android Studio 新建项目, 到选择Activity布局时，选择空白布局。 完成选择 ...
-                                    <!--noindex-->
-                                    <div class="post-button text-center">
-                                        <a class="btn" href="/2018/09/08/Android-Develop-1/#more" rel="contents">
-                      阅读全文 &raquo;
-                    </a>
-                                    </div>
-                                    <!--/noindex-->
-                                </div>
-                                <div>
-                                </div>
-                                <div>
-                                </div>
-                                <div>
-                                </div>
-                                <footer class="post-footer">
-                                    <div class="post-eof"></div>
-                                </footer>
-                            </article>
-                            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/08/命令行工具，让工作效率更高效。/">
 
-                                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Wothard">
-                  <meta itemprop="description" content="">
-                  <meta itemprop="image" content="/images/avatar.jpg">
-                </span>
-
-                                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
-                </span>
-
-
-                                <header class="post-header">
-
-
-
-                                    <h1 class="post-title" itemprop="name headline">
-
-
-
-
-                                        <a class="post-title-link" href="/2017/11/08/命令行工具，让工作效率更高效。/" itemprop="url">
-                      命令行工具，让工作效率更高效。
-                    </a>
-
-
-                                    </h1>
-
-
-                                    <div class="post-meta">
-                                        <span class="post-time">
-
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">发表于</span>
-
-                                        <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-08T19:28:30+08:00">
-                        2017-11-08
-                      </time>
-
-
-
-
-
-                                        </span>
-                                    </div>
-                                </header>
-
-
-
-                                <div class="post-body" itemprop="articleBody">
-                                    1 ag 代码搜索工具1$ sudo apt-get install silversearcher-ag 编辑器集成 vim 您可以通过将以下行添加到~/.vimrc：[ack.vim][]来使用Ag 1let g:ackprg = &apos;ag --nogroup --nocolor --co ...
-                                    <!--noindex-->
-                                    <div class="post-button text-center">
-                                        <a class="btn" href="/2017/11/08/命令行工具，让工作效率更高效。/#more" rel="contents">
-                      阅读全文 &raquo;
-                    </a>
-                                    </div>
-                                    <!--/noindex-->
-
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <footer class="post-footer">
-                                    <div class="post-eof"></div>
-
-                                </footer>
-                            </article>
-                            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/30/Django-教程/">
-
-                                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Wothard">
-                  <meta itemprop="description" content="">
-                  <meta itemprop="image" content="/images/avatar.jpg">
-                </span>
-
-                                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
-                </span>
-
-
-                                <header class="post-header">
-
-
-
-                                    <h1 class="post-title" itemprop="name headline">
-
-
-
-
-                                        <a class="post-title-link" href="/2017/09/30/Django-教程/" itemprop="url">
-                      Django 教程
-                    </a>
-
-
-                                    </h1>
-
-
-                                    <div class="post-meta">
-                                        <span class="post-time">
-
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">发表于</span>
-
-                                        <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-30T16:34:32+08:00">
-                        2017-09-30
-                      </time>
-
-
-
-
-
-                                        </span>
-
-
-                                        <span class="post-category">
-
-                      <span class="post-meta-divider">|</span>
-
-                                        <span class="post-meta-item-icon">
-                        <i class="fa fa-folder-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">分类于</span>
-
-
-                                        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Python/" itemprop="url" rel="index">
-                          <span itemprop="name">Python</span>
-                                        </a>
-                                        </span>
-
-
-
-
-                                        </span>
-                                    </div>
-                                </header>
-
-
-
-                                <div class="post-body" itemprop="articleBody">
-                                    1 照例安装：先安装virtualenv, 再安装Django12345678910111213sudo pip install virtualenv'''然后新建一个文件夹，转到该文件夹运行,新建一个文件夹的目的是将要隔离运行的python版本和django工程在同一文件夹下，方便管理，当然也不必 ...
-                                    <!--noindex-->
-                                    <div class="post-button text-center">
-                                        <a class="btn" href="/2017/09/30/Django-教程/#more" rel="contents">
-                      阅读全文 &raquo;
-                    </a>
-                                    </div>
-                                    <!--/noindex-->
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <footer class="post-footer">
-                                    <div class="post-eof"></div>
-
-                                </footer>
-                            </article>
-
-
-
-
-
-
-
-
-
-
-
-                            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/18/网易云评论数float图/">
-
-                                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Wothard">
-                  <meta itemprop="description" content="">
-                  <meta itemprop="image" content="/images/avatar.jpg">
-                </span>
-
-                                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
-                </span>
-
-
-                                <header class="post-header">
-
-
-
-                                    <h1 class="post-title" itemprop="name headline">
-
-
-
-
-                                        <a class="post-title-link" href="/2017/05/18/网易云评论数float图/" itemprop="url">
-                      网易云评论数float图
-                    </a>
-
-
-                                    </h1>
-
-
-                                    <div class="post-meta">
-                                        <span class="post-time">
-
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">发表于</span>
-
-                                        <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T22:01:29+08:00">
-                        2017-05-18
-                      </time>
-
-
-
-
-
-                                        </span>
-
-
-                                        <span class="post-category">
-
-                      <span class="post-meta-divider">|</span>
-
-                                        <span class="post-meta-item-icon">
-                        <i class="fa fa-folder-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">分类于</span>
-
-
-                                        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Python/" itemprop="url" rel="index">
-                          <span itemprop="name">Python</span>
-                                        </a>
-                                        </span>
-
-
-
-
-                                        </span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    </div>
-                                </header>
-
-
-
-                                <div class="post-body" itemprop="articleBody">
-
-
-
-
-
-
-
-                                    float图来了，18号想弄的，非得拖到今天。 先前想到用svg格式嵌入的，但写在markdown里面没法弄，以后多找找些js工具来弄图表， 虽然博客是静态的，但只写字太单调了，加点东西装饰，先弄第一个吧 PlainInvertedPolar containers { min-widt ...
-                                    <!--noindex-->
-                                    <div class="post-button text-center">
-                                        <a class="btn" href="/2017/05/18/网易云评论数float图/#more" rel="contents">
-                      阅读全文 &raquo;
-                    </a>
-                                    </div>
-                                    <!--/noindex-->
-
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <footer class="post-footer">
-
-
-
-
-
-
-
-
-                                    <div class="post-eof"></div>
-
-                                </footer>
-                            </article>
-
-
-
-
-
-
-
-
-
-
-
-                            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/14/Python爬虫遇到的多线程的坑/">
-
-                                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Wothard">
-                  <meta itemprop="description" content="">
-                  <meta itemprop="image" content="/images/avatar.jpg">
-                </span>
-
-                                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
-                </span>
-
-
-                                <header class="post-header">
-
-
-
-                                    <h1 class="post-title" itemprop="name headline">
-
-
-
-
-                                        <a class="post-title-link" href="/2017/05/14/Python爬虫遇到的多线程的坑/" itemprop="url">
-                      Python爬虫遇到的多线程的坑
-                    </a>
-
-
-                                    </h1>
-
-
-                                    <div class="post-meta">
-                                        <span class="post-time">
-
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">发表于</span>
-
-                                        <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-14T14:22:58+08:00">
-                        2017-05-14
-                      </time>
-
-
-
-
-
-                                        </span>
-
-
-                                        <span class="post-category">
-
-                      <span class="post-meta-divider">|</span>
-
-                                        <span class="post-meta-item-icon">
-                        <i class="fa fa-folder-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">分类于</span>
-
-
-                                        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Python/" itemprop="url" rel="index">
-                          <span itemprop="name">Python</span>
-                                        </a>
-                                        </span>
-
-
-
-
-                                        </span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    </div>
-                                </header>
-
-
-
-                                <div class="post-body" itemprop="articleBody">
-
-
-
-
-
-
-
-                                    Python爬虫遇到的多线程的坑先谈谈我的认识 其实还没弄懂并发和并行,然后依照自己的想法去做，别人是用多线程下载网页的，我爬的是网易云音乐的评论数，而用到多线程去解析，做了三个脚本： 第一个是只用threading的方法和类去弄。 第二个是比第一个多了Queue模块。 第三个想法行不通（看到 ...
-                                    <!--noindex-->
-                                    <div class="post-button text-center">
-                                        <a class="btn" href="/2017/05/14/Python爬虫遇到的多线程的坑/#more" rel="contents">
-                      阅读全文 &raquo;
-                    </a>
-                                    </div>
-                                    <!--/noindex-->
-
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <footer class="post-footer">
-
-
-
-
-
-
-
-
-                                    <div class="post-eof"></div>
-
-                                </footer>
-                            </article>
-
-
-
-
-
-
-
-
-
-
-
-                            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/04/关于Django创建博客的入门/">
-
-                                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Wothard">
-                  <meta itemprop="description" content="">
-                  <meta itemprop="image" content="/images/avatar.jpg">
-                </span>
-
-                                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
-                </span>
-
-
-                                <header class="post-header">
-
-
-
-                                    <h1 class="post-title" itemprop="name headline">
-
-
-
-
-                                        <a class="post-title-link" href="/2017/04/04/关于Django创建博客的入门/" itemprop="url">
-                      关于Django创建博客的入门
-                    </a>
-
-
-                                    </h1>
-
-
-                                    <div class="post-meta">
-                                        <span class="post-time">
-
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">发表于</span>
-
-                                        <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-04T14:25:06+08:00">
-                        2017-04-04
-                      </time>
-
-
-
-
-
-                                        </span>
-
-
-                                        <span class="post-category">
-
-                      <span class="post-meta-divider">|</span>
-
-                                        <span class="post-meta-item-icon">
-                        <i class="fa fa-folder-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">分类于</span>
-
-
-                                        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Django/" itemprop="url" rel="index">
-                          <span itemprop="name">Django</span>
-                                        </a>
-                                        </span>
-
-
-
-
-                                        </span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    </div>
-                                </header>
-
-
-
-                                <div class="post-body" itemprop="articleBody">
-
-
-
-
-
-
-
-                                    -开始前的准备 系统环境：在Windows上测试的，Django版本是1.6，python 2.7.13 1&lt;!-- more --&gt; 1.创建工程 1django-admin.py startproject yoursitename 工程文件夹下三个重要的文件 manage.py —– ...
-                                    <!--noindex-->
-                                    <div class="post-button text-center">
-                                        <a class="btn" href="/2017/04/04/关于Django创建博客的入门/#more" rel="contents">
-                      阅读全文 &raquo;
-                    </a>
-                                    </div>
-                                    <!--/noindex-->
-
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <footer class="post-footer">
-
-
-
-
-
-
-
-
-                                    <div class="post-eof"></div>
-
-                                </footer>
-                            </article>
-
-
-
-
-
-
-
-
-
-
-
-                            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/31/hello-world/">
-
-                                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Wothard">
-                  <meta itemprop="description" content="">
-                  <meta itemprop="image" content="/images/avatar.jpg">
-                </span>
-
-                                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
-                </span>
-
-
-                                <header class="post-header">
-
-
-
-                                    <h1 class="post-title" itemprop="name headline">
-
-
-
-
-                                        <a class="post-title-link" href="/2017/03/31/hello-world/" itemprop="url">
-                      Hello World,我吃了一颗糖
-                    </a>
-
-
-                                    </h1>
-
-
-                                    <div class="post-meta">
-                                        <span class="post-time">
-
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-
-                                        <span class="post-meta-item-text">发表于</span>
-
-                                        <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-31T15:18:24+08:00">
-                        2017-03-31
-                      </time>
-
-
-
-
-
-                                        </span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    </div>
-                                </header>
-
-
-
-                                <div class="post-body" itemprop="articleBody">
-
-
-
-
-
-
-
-                                    Hi，虽然今天吃了一颗糖，其实也没啥庆祝的，一个后端的假的程序员，花了一下午弄的博客，简洁的很啊。
-
-
-                                    <!--noindex-->
-                                    <div class="post-button text-center">
-                                        <a class="btn" href="/2017/03/31/hello-world/#more" rel="contents">
-                      阅读全文 &raquo;
-                    </a>
-                                    </div>
-                                    <!--/noindex-->
-
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <div>
-
-                                </div>
-
-                                <footer class="post-footer">
-
-
-
-
-
-
-
-
-                                    <div class="post-eof"></div>
-
-                                </footer>
-                            </article>
-
-
-
-                        </section>
-
-
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-
-
-                <div class="sidebar-toggle">
-                    <div class="sidebar-toggle-line-wrap">
-                        <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-                        <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-                        <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-                    </div>
-                </div>
-
-                <aside id="sidebar" class="sidebar">
-                    <div class="sidebar-inner">
-
-
-
-
-
-                        <section class="site-overview sidebar-panel sidebar-panel-active">
-                            <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                                <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Wothard" />
-                                <p class="site-author-name" itemprop="name">Wothard</p>
-
-                                <p class="site-description motion-element" itemprop="description">入不言兮出不辞， 乘回风兮载云旗。 悲莫悲兮生别离， 乐莫乐兮新相知。</p>
-
-                            </div>
-                            <nav class="site-state motion-element">
-
-
-                                <div class="site-state-item site-state-posts">
-                                    <a href="/archives">
-                                        <span class="site-state-item-count">7</span>
-                                        <span class="site-state-item-name">日志</span>
-                                    </a>
-                                </div>
-
-
-
-
-
-                                <div class="site-state-item site-state-categories">
-                                    <a href="/categories/index.html">
-                                        <span class="site-state-item-count">2</span>
-                                        <span class="site-state-item-name">分类</span>
-                                    </a>
-                                </div>
-
-
-
-
-
-                                <div class="site-state-item site-state-tags">
-                                    <a href="/tags/index.html">
-                                        <span class="site-state-item-count">3</span>
-                                        <span class="site-state-item-name">标签</span>
-                                    </a>
-                                </div>
-
-
-                            </nav>
-
-
-
-                            <div class="links-of-author motion-element">
-                                <span class="links-of-author-item">
-                                  <a href="https://github.com/wothard" target="_blank" title="GitHub">
-                                    <i class="fa fa-fw fa-github"></i>GitHub</a>
-                                    <a href="https://wothard.github.io/python/" target="_blank" title="GitHub">
-                                      <i class="fa fa-fw fa-github"></i>GitHub</a>
-                                  </span>
-                            </div>
-                        </section>
-                    </div>
-                </aside>
-
-
-
-            </div>
-        </main>
-        <footer id="footer" class="footer">
-            <div class="footer-inner">
-                <div class="copyright">
-
-                    &copy;
-                    <span itemprop="copyrightYear">2018</span>
-                    <span class="with-love">
-            <i class="fa fa-heart"></i>
-          </span>
-                    <span class="author" itemprop="copyrightHolder">Wothard</span>
-                </div>
-
-
-                <div class="powered-by">
-                    由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-                </div>
-
-                <div class="theme-info">
-                    主题 -
-                    <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-            NexT.Mist
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode" target="_blank" rel="noopener">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+
+
+
+  <div class="container one-column 
+   page-home 
+">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+        <h1 class="site-meta">
+          <span class="logo-line-before"><i></i></span>
+          <a href="/" class="brand" rel="start">
+            <span class="logo">
+              <i class="icon-next-logo"></i>
+            </span>
+            <span class="site-title">路漫漫兮其修远 吾将上下而求索</span>
           </a>
-                </div>
-            </div>
-        </footer>
-        <div class="back-to-top">
-            <i class="fa fa-arrow-up"></i>
+          <span class="logo-line-after"><i></i></span>
+        </h1>
+
+        <div class="site-nav-toggle">
+          <button>
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+          </button>
         </div>
-    </div>
-    <script type="text/javascript">
-        if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-            window.Promise = null;
-        }
-    </script>
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-    <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-    <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-    <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+        <nav class="site-nav">
+
+
+
+          <ul id="menu" class="menu ">
+
+
+            <li class="menu-item menu-item-home">
+              <a href="/" rel="section">
+                <i class="menu-item-icon icon-next-home"></i> <br />
+                🌝首页
+              </a>
+            </li>
+
+
+            <li class="menu-item menu-item-categories">
+              <a href="/categories" rel="section">
+                <i class="menu-item-icon icon-next-categories"></i> <br />
+                🤣分类
+              </a>
+            </li>
+
+
+            <li class="menu-item menu-item-archives">
+              <a href="/archives" rel="section">
+                <i class="menu-item-icon icon-next-archives"></i> <br />
+                🍺归档
+              </a>
+            </li>
+
+
+            <li class="menu-item menu-item-tags">
+              <a href="/tags" rel="section">
+                <i class="menu-item-icon icon-next-tags"></i> <br />
+                🤪标签
+              </a>
+            </li>
+
+
+            <li class="menu-item menu-item-about">
+              <a href="/about" rel="section">
+                <i class="menu-item-icon icon-next-about"></i> <br />
+                😜关于
+              </a>
+            </li>
+
+
+
+
+          </ul>
+
+
+
+        </nav>
+
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          <section id="posts" class="posts-expand">
+
+
+
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+                  <a class="post-title-link" href="/2020/04/12/bk/" itemprop="url">
+                    bk
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+                    发表于
+                    <time itemprop="dateCreated" datetime="2020-04-12T14:50:05+08:00" content="2020-04-12">
+                      2020-04-12
+                    </time>
+                  </span>
+
+
+                </div>
+              </header>
+
+              <div class="post-body">
+
+
+
+
+
+
+                <span itemprop="articleBody">
+
+                  反对大家奥斯卡德拉
+
+
+                </span>
+                <div class="post-more-link text-center">
+                  <a class="btn" href="/2020/04/12/bk/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+
+
+              </div>
+
+              <footer class="post-footer">
+
+
+
+
+
+
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+
+
+
+
+
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+                  <a class="post-title-link" href="/2020/04/12/hello-world/" itemprop="url">
+                    Hello World
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+                    发表于
+                    <time itemprop="dateCreated" datetime="2020-04-12T13:55:25+08:00" content="2020-04-12">
+                      2020-04-12
+                    </time>
+                  </span>
+
+
+                </div>
+              </header>
+
+              <div class="post-body">
+
+
+
+
+
+
+                <span itemprop="articleBody">
+
+                  Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any
+                  problems when using Hexo, you can find the answer in
+                  ...
+                </span>
+                <div class="post-more-link text-center">
+                  <a class="btn" href="/2020/04/12/hello-world/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+
+
+              </div>
+
+              <footer class="post-footer">
+
+
+
+
+
+
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/08/Android-Develop-1/">
+              <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Wothard">
+                <meta itemprop="description" content="">
+                <meta itemprop="image" content="/images/avatar.jpg">
+              </span>
+              <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
+              </span>
+              <header class="post-header">
+                <h1 class="post-title" itemprop="name headline">
+                  <a class="post-title-link" href="/2018/09/08/Android-Develop-1/" itemprop="url">
+                    Android Develop #1
+                  </a>
+                </h1>
+                <div class="post-meta">
+                  <span class="post-time">
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-calendar-o"></i>
+                    </span>
+                    <span class="post-meta-item-text">发表于</span>
+                    <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-08T17:09:17+08:00">
+                      2018-09-08
+                    </time>
+                  </span>
+                </div>
+              </header>
+              <div class="post-body" itemprop="articleBody">
+                #开发一个简单的Toast应用 ##1 下载 Android Studio 并安装 1进入官网 https://developer.android.com/studio/ 下载 一路确认安装后，打开
+                Android Studio 新建项目, 到选择Activity布局时，选择空白布局。 完成选择 ...
+                <!--noindex-->
+                <div class="post-button text-center">
+                  <a class="btn" href="/2018/09/08/Android-Develop-1/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+                <!--/noindex-->
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+              <footer class="post-footer">
+                <div class="post-eof"></div>
+              </footer>
+            </article>
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/08/命令行工具，让工作效率更高效。/">
+
+              <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Wothard">
+                <meta itemprop="description" content="">
+                <meta itemprop="image" content="/images/avatar.jpg">
+              </span>
+
+              <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
+              </span>
+
+
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                  <a class="post-title-link" href="/2017/11/08/命令行工具，让工作效率更高效。/" itemprop="url">
+                    命令行工具，让工作效率更高效。
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-calendar-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">发表于</span>
+
+                    <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-08T19:28:30+08:00">
+                      2017-11-08
+                    </time>
+
+
+
+
+
+                  </span>
+                </div>
+              </header>
+
+
+
+              <div class="post-body" itemprop="articleBody">
+                1 ag 代码搜索工具1$ sudo apt-get install silversearcher-ag 编辑器集成 vim 您可以通过将以下行添加到~/.vimrc：[ack.vim][]来使用Ag
+                1let g:ackprg = &apos;ag --nogroup --nocolor --co ...
+                <!--noindex-->
+                <div class="post-button text-center">
+                  <a class="btn" href="/2017/11/08/命令行工具，让工作效率更高效。/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+                <!--/noindex-->
+
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <footer class="post-footer">
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/30/Django-教程/">
+
+              <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Wothard">
+                <meta itemprop="description" content="">
+                <meta itemprop="image" content="/images/avatar.jpg">
+              </span>
+
+              <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
+              </span>
+
+
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                  <a class="post-title-link" href="/2017/09/30/Django-教程/" itemprop="url">
+                    Django 教程
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-calendar-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">发表于</span>
+
+                    <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-30T16:34:32+08:00">
+                      2017-09-30
+                    </time>
+
+
+
+
+
+                  </span>
+
+
+                  <span class="post-category">
+
+                    <span class="post-meta-divider">|</span>
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-folder-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">分类于</span>
+
+
+                    <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                      <a href="/categories/Python/" itemprop="url" rel="index">
+                        <span itemprop="name">Python</span>
+                      </a>
+                    </span>
+
+
+
+
+                  </span>
+                </div>
+              </header>
+
+
+
+              <div class="post-body" itemprop="articleBody">
+                1 照例安装：先安装virtualenv, 再安装Django12345678910111213sudo pip install
+                virtualenv'''然后新建一个文件夹，转到该文件夹运行,新建一个文件夹的目的是将要隔离运行的python版本和django工程在同一文件夹下，方便管理，当然也不必 ...
+                <!--noindex-->
+                <div class="post-button text-center">
+                  <a class="btn" href="/2017/09/30/Django-教程/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+                <!--/noindex-->
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <footer class="post-footer">
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/18/网易云评论数float图/">
+
+              <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Wothard">
+                <meta itemprop="description" content="">
+                <meta itemprop="image" content="/images/avatar.jpg">
+              </span>
+
+              <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
+              </span>
+
+
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                  <a class="post-title-link" href="/2017/05/18/网易云评论数float图/" itemprop="url">
+                    网易云评论数float图
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-calendar-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">发表于</span>
+
+                    <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T22:01:29+08:00">
+                      2017-05-18
+                    </time>
+
+
+
+
+
+                  </span>
+
+
+                  <span class="post-category">
+
+                    <span class="post-meta-divider">|</span>
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-folder-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">分类于</span>
+
+
+                    <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                      <a href="/categories/Python/" itemprop="url" rel="index">
+                        <span itemprop="name">Python</span>
+                      </a>
+                    </span>
+
+
+
+
+                  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+              </header>
+
+
+
+              <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+
+                float图来了，18号想弄的，非得拖到今天。 先前想到用svg格式嵌入的，但写在markdown里面没法弄，以后多找找些js工具来弄图表， 虽然博客是静态的，但只写字太单调了，加点东西装饰，先弄第一个吧
+                PlainInvertedPolar containers { min-widt ...
+                <!--noindex-->
+                <div class="post-button text-center">
+                  <a class="btn" href="/2017/05/18/网易云评论数float图/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+                <!--/noindex-->
+
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <footer class="post-footer">
+
+
+
+
+
+
+
+
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/14/Python爬虫遇到的多线程的坑/">
+
+              <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Wothard">
+                <meta itemprop="description" content="">
+                <meta itemprop="image" content="/images/avatar.jpg">
+              </span>
+
+              <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
+              </span>
+
+
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                  <a class="post-title-link" href="/2017/05/14/Python爬虫遇到的多线程的坑/" itemprop="url">
+                    Python爬虫遇到的多线程的坑
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-calendar-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">发表于</span>
+
+                    <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-14T14:22:58+08:00">
+                      2017-05-14
+                    </time>
+
+
+
+
+
+                  </span>
+
+
+                  <span class="post-category">
+
+                    <span class="post-meta-divider">|</span>
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-folder-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">分类于</span>
+
+
+                    <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                      <a href="/categories/Python/" itemprop="url" rel="index">
+                        <span itemprop="name">Python</span>
+                      </a>
+                    </span>
+
+
+
+
+                  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+              </header>
+
+
+
+              <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+
+                Python爬虫遇到的多线程的坑先谈谈我的认识 其实还没弄懂并发和并行,然后依照自己的想法去做，别人是用多线程下载网页的，我爬的是网易云音乐的评论数，而用到多线程去解析，做了三个脚本：
+                第一个是只用threading的方法和类去弄。 第二个是比第一个多了Queue模块。 第三个想法行不通（看到 ...
+                <!--noindex-->
+                <div class="post-button text-center">
+                  <a class="btn" href="/2017/05/14/Python爬虫遇到的多线程的坑/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+                <!--/noindex-->
+
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <footer class="post-footer">
+
+
+
+
+
+
+
+
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/04/关于Django创建博客的入门/">
+
+              <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Wothard">
+                <meta itemprop="description" content="">
+                <meta itemprop="image" content="/images/avatar.jpg">
+              </span>
+
+              <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
+              </span>
+
+
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                  <a class="post-title-link" href="/2017/04/04/关于Django创建博客的入门/" itemprop="url">
+                    关于Django创建博客的入门
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-calendar-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">发表于</span>
+
+                    <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-04T14:25:06+08:00">
+                      2017-04-04
+                    </time>
+
+
+
+
+
+                  </span>
+
+
+                  <span class="post-category">
+
+                    <span class="post-meta-divider">|</span>
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-folder-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">分类于</span>
+
+
+                    <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                      <a href="/categories/Django/" itemprop="url" rel="index">
+                        <span itemprop="name">Django</span>
+                      </a>
+                    </span>
+
+
+
+
+                  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+              </header>
+
+
+
+              <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+
+                -开始前的准备 系统环境：在Windows上测试的，Django版本是1.6，python 2.7.13 1&lt;!-- more --&gt; 1.创建工程 1django-admin.py
+                startproject yoursitename 工程文件夹下三个重要的文件 manage.py —– ...
+                <!--noindex-->
+                <div class="post-button text-center">
+                  <a class="btn" href="/2017/04/04/关于Django创建博客的入门/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+                <!--/noindex-->
+
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <footer class="post-footer">
+
+
+
+
+
+
+
+
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+            <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/31/hello-world/">
+
+              <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Wothard">
+                <meta itemprop="description" content="">
+                <meta itemprop="image" content="/images/avatar.jpg">
+              </span>
+
+              <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="路漫漫兮其修远 吾将上下而求索">
+              </span>
+
+
+              <header class="post-header">
+
+
+
+                <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                  <a class="post-title-link" href="/2017/03/31/hello-world/" itemprop="url">
+                    Hello World,我吃了一颗糖
+                  </a>
+
+
+                </h1>
+
+
+                <div class="post-meta">
+                  <span class="post-time">
+
+                    <span class="post-meta-item-icon">
+                      <i class="fa fa-calendar-o"></i>
+                    </span>
+
+                    <span class="post-meta-item-text">发表于</span>
+
+                    <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-31T15:18:24+08:00">
+                      2017-03-31
+                    </time>
+
+
+
+
+
+                  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+              </header>
+
+
+
+              <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+
+                Hi，虽然今天吃了一颗糖，其实也没啥庆祝的，一个后端的假的程序员，花了一下午弄的博客，简洁的很啊。
+
+
+                <!--noindex-->
+                <div class="post-button text-center">
+                  <a class="btn" href="/2017/03/31/hello-world/#more" rel="contents">
+                    阅读全文 &raquo;
+                  </a>
+                </div>
+                <!--/noindex-->
+
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <div>
+
+              </div>
+
+              <footer class="post-footer">
+
+
+
+
+
+
+
+
+                <div class="post-eof"></div>
+
+              </footer>
+            </article>
+
+
+
+          </section>
+
+
+        </div>
+      </div>
+
+
+
+      <div class="sidebar-toggle">
+        <div class="sidebar-toggle-line-wrap">
+          <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+          <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+          <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+        </div>
+      </div>
+
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-inner">
+
+
+
+          <section class="site-overview">
+            <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <img class="site-author-image" src="/images/default_avatar.jpg" alt="Wothard" itemprop="image" />
+              <p class="site-author-name" itemprop="name">Wothard</p>
+            </div>
+            <p class="site-description motion-element" itemprop="description"></p>
+            <nav class="site-state motion-element">
+              <div class="site-state-item site-state-posts">
+                <a href="/archives">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+
+              <div class="site-state-item site-state-categories">
+                <a href="/categories">
+                  <span class="site-state-item-count">0</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+
+              <div class="site-state-item site-state-tags">
+                <a href="/tags">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+
+            </nav>
+
+
+
+            <div class="links-of-author motion-element">
+
+            </div>
+
+            <div class="links-of-friendly motion-element">
+
+            </div>
+
+
+
+
+          </section>
+
+
+
+        </div>
+      </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+
+          &copy; &nbsp;
+          <span itemprop="copyrightYear">2020
+          </span>
+          <span class="with-love">
+            <i class="icon-next-heart"></i>
+          </span>
+          <span class="author" itemprop="copyrightHolder">Wothard
+          </span>
+        </div>
+
+        <div class="powered-by">
+          Powered by <a class="theme-link" href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>
+        </div>
+
+        <div class="theme-info">
+          Theme by <a class="theme-link" href="https://idhyt.github.io" target="_blank" rel="noopener">idhyt</a>.<a
+            class="theme-link" href="https://github.com/idhyt/hexo-theme-next/tree/magiclamp" target="_blank"
+            rel="noopener">Mala</a>
+        </div>
+
+        <!-- busuanzi -->
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+
+
+
+
+
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
 </body>
 
 </html>
