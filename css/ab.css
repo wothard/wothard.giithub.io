@@ -35,9 +35,10 @@ h1 {
 }
 
 .header-flex span {
-    margin: 0 0 .38em 1em;
-    font-size: 1.8em;
-    margin-bottom: .38em;
+    /* margin: 0 0 1.58em 1em; */
+    font-size: 1.4em;
+    margin-left: 1em;
+    margin-bottom: .68em;
 }
 
 .line-first {
