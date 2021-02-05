@@ -1,0 +1,396 @@
+@import url(https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@300&display=swap);
+
+:root {
+    --main-font: "Noto Sans SC";
+    --white-gray: #f5f7fa;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: #222;
+    color: var(--white-gray);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin: .17em 0;
+}
+
+.page {
+    width: 950px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header-flex {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-flex span {
+    margin: 0 0 .38em 1em;
+    font-size: 1.8em;
+    margin-bottom: .38em;
+}
+
+.line-first {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.xq {
+    margin-bottom: 40px;
+    padding-top: 1.8em;
+}
+
+.exp {
+    border: 2px solid #ffffff;
+    padding: .2em .4em;
+    font-size: 1.8em;
+    display: inline-block;
+}
+
+.exp-data {
+    height: 240px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.d-item {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+}
+
+.dd-item1 {
+    z-index: 1;
+    right: 0;
+    border-left: 550px solid transparent;
+    border-right: 400px solid transparent;
+    border-bottom: 0px solid #2196a7;
+    /* border-bottom-width: 240px; */
+}
+
+.dd-item2 {
+    z-index: 5;
+    left: 0px;
+    border-left: 148px solid transparent;
+    border-right: 85px solid transparent;
+    /* opacity: .5; */
+    border-bottom: 0px solid #b4dad7c0;
+    /* border-bottom-width: 64px; */
+}
+
+.d2-h5 {
+    position: absolute;
+    left: -124px;
+    bottom: 10px;
+    white-space: nowrap;
+    border-bottom: 2px solid #b4dad7;
+}
+
+
+.dd-item3 {
+    z-index: 4;
+    left: 190px;
+    border-left: 394px solid transparent;
+    border-right: 307px solid transparent;
+    /* opacity: .5; */
+    border-bottom: 0px solid #68ece19c;
+    /* border-bottom-width: 185px; */
+}
+
+.dd-item4 {
+    z-index: 6;
+    left: 240px;
+    border-left: 185px solid transparent;
+    border-right: 147px solid transparent;
+    /* opacity: .5; */
+    border-bottom: 0px solid #c1fffa9c;
+    /* border-bottom-width: 90px; */
+}
+
+.dd-item5 {
+    z-index: 4;
+    left: 440px;
+    border-left: 320px solid transparent;
+    border-right: 187px solid transparent;
+    /* opacity: .5; */
+    border-bottom: 0px solid #3dc8ffb2;
+    /* border-bottom-width: 220px; */
+}
+
+.dd-item6 {
+    z-index: 6;
+    left: 440px;
+    border-left: 133px solid transparent;
+    border-right: 114px solid transparent;
+    /* opacity: .5; */
+    border-bottom: 0px solid #264cf760;
+    /* border-bottom-width: 90px; */
+}
+
+.dd-item7 {
+    z-index: 6;
+    left: 540px;
+    border-left: 133px solid transparent;
+    border-right: 114px solid transparent;
+    border-bottom: 0px solid #f7e05c7a;
+    /* border-bottom-width: 90px; */
+}
+
+.dd-item8 {
+    z-index: 8;
+    left: 750px;
+    border-left: 98px solid transparent;
+    border-right: 102px solid transparent;
+    border-bottom: 0px solid #f7885caf;
+    border-bottom-width: 118px;
+}
+
+.d4-h5 {
+    position: absolute;
+    left: -117px;
+    bottom: 85px;
+    white-space: nowrap;
+    border-bottom: 2px solid #b4dad7;
+}
+
+.d4-sp {
+    height: 99px;
+}
+
+.d-item-h5 {
+    position: absolute;
+    bottom: 10px;
+    white-space: nowrap;
+    border-bottom: 2px solid #b4dad7;
+}
+
+.d-item span {
+    position: absolute;
+    bottom: 10px;
+    border-left: 2px solid #b4dad7;
+}
+
+.date-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-item-last {
+    align-items: flex-end;
+}
+
+.date-up {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+.mid-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mid-left {
+    width: 50%;
+}
+
+.edu-data {
+    padding-top: 30px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.edu-item {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-bottom: 87.5px solid #b4dad7;
+}
+
+.line-second {
+    width: 350px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.edu-bot {
+    width: 350px;
+}
+
+.mid-right {
+    width: 50%;
+}
+
+.bot-box {
+    margin-top: 15px;
+}
+
+.bot-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-left {
+    width: 80%;
+}
+
+.bot-right {
+    width: 20%;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+
+
+.donut-chart {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2rem;
+    border-radius: 100%
+}
+
+p.center {
+    background: #222;
+    position: absolute;
+    text-align: center;
+    font-size: 28px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    line-height: 35px;
+}
+
+
+.portion-block {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.circle {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+
+#part1 {
+    transform: rotate(0deg);
+}
+
+#part1 .circle {
+    background-color: #f1404b;
+    /*transform: rotate(76deg);*/
+    animation: first 1s 1 forwards;
+}
+
+
+#part2 {
+    transform: rotate(110deg);
+}
+
+#part2 .circle {
+    background-color: #45d9fd;
+    animation: second 1s 1 forwards 1s;
+}
+
+#part3 {
+    transform: rotate(220deg);
+}
+
+#part3 .circle {
+    background-color: #f8ca00;
+    animation: third 0.5s 1 forwards 2s;
+}
+
+#part4 {
+    transform: rotate(265deg);
+}
+
+#part4 .circle {
+    background-color: #52616a;
+    animation: four 0.5s 1 forwards 3s;
+}
+
+
+/* Animation */
+@keyframes first {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(110deg);
+    }
+}
+
+@keyframes second {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(110deg);
+    }
+}
+
+@keyframes third {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes four {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(35deg);
+    }
+}
